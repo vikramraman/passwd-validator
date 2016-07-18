@@ -1,4 +1,4 @@
-PasswordValidator is a simple password validation service written in Java. It uses Spring Boot and is configurable via IoC using the Spring Framework. 
+passwd-validator is a simple password validation service written in Java. It uses Spring Boot and is configurable via IoC using the Spring Framework. 
 
 The service is meant to check a text string for compliance to a number of password validation rules.
 
