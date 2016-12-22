@@ -1,8 +1,6 @@
-passwd-validator is a simple password validation service written in Java. It uses Spring Boot and is configurable via IoC using the Spring Framework. 
+A simple password validation service written in Java using Spring Boot and configurable via IoC. 
 
-The service is meant to check a text string for compliance to a number of password validation rules.
-
-The rules currently supported are:
+The service checks a text string for compliance with several validation rules:
 
 1. Must consist of a mixture of lowercase letters and numerical digits only, with at least one of each.
 2. Must be between 5 and 12 characters in length.
