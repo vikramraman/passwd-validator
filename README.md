@@ -1,4 +1,4 @@
-A simple password validation service written in Java using Spring Boot and configurable via IoC. 
+A simple password validation service written in Java using Spring Boot and configurable via IoC.
 
 The service checks a text string for compliance with several validation rules:
 
@@ -9,16 +9,22 @@ The service checks a text string for compliance with several validation rules:
 ## Build the source code
 
 1. Export JAVA_HOME:
+```
 export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_65.jdk/Contents/Home/
+```
 
 2. Run maven at the toplevel directory: (this will download the necessary packages the first time):
+```
 ./mvnw package && java -jar target/passwordValidator-0.0.1-SNAPSHOT.jar
+```
 
 ## Test the code
 
 1. Run step 2 above and then use the curl command line tool as follows:
 
+```
 curl -X POST -d "password=foobar" http://localhost:8080/validate
+```
 
 ## Future work
 
@@ -26,7 +32,7 @@ The framework can be enhanced further in the following aspects:
 
 1. http://docs.oracle.com/javase/8/docs/technotes/guides/security/crypto/CryptoSpec.html#PBEEx
 
-For security purposes, the Java Cryptography Architecture reference guide recommends using 
+For security purposes, the Java Cryptography Architecture reference guide recommends using
 character arrays instead of String classes for storing (and erasing) passwords in memory.
 
 The current implementation uses Strings and can be enhanced to use character arrays.
